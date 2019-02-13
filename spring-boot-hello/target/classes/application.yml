@@ -1,0 +1,40 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.232.129:3306/test?characterEncoding=utf-8&useSSL=false
+    username: root
+    password: root
+  jpa:
+    database: mysql
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      naming:
+        strategy: org.hibernate.cfg.ImprovedNamingStrategy
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+  #
+  thymeleaf:
+    cache: false
+
+  freemarker:
+    cache: false
+
+#SpringBoot默认端口号是8080
+#SpringBoot默认context-path是/
+#server:
+#  port: 8081
+#  context-path: /spring-boot
+#  tomcat:
+#    accesslog:
+#      pattern: #
+#      enabled: false
+#    protocol-header: x-forwarded-proto
+#    remote-ip-header: x-forwarded-for
+#    basedir: /tmp
+#    background-processor-delay: 30
+#    max-threads: 0
+#    uri-encoding: UTF-8
+
+

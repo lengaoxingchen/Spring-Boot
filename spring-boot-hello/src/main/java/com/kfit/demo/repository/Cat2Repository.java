@@ -1,9 +1,7 @@
 package com.kfit.demo.repository;
 
 import com.kfit.demo.bean.Cat;
-import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.Repository;
-import org.springframework.data.repository.query.Param;
 
 
 /**

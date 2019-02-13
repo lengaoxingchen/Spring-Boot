@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="spring-boot-fileupload" />
         <module name="spring-boot-hello" />
         <module name="spring-boot-hello1" />
         <module name="spring-boot-jsp" />
@@ -15,6 +16,8 @@
     <bytecodeTargetLevel>
       <module name="demo" target="1.8" />
       <module name="spring-boot" target="1.5" />
+      <module name="spring-boot-druid" target="1.8" />
+      <module name="spring-boot-fileupload" target="1.8" />
       <module name="spring-boot-hello" target="1.8" />
       <module name="spring-boot-jsp" target="1.8" />
       <module name="spring-boot-mybatis" target="1.8" />
@@ -23,6 +26,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="demo" options="-parameters" />
+      <module name="spring-boot-druid" options="-parameters" />
       <module name="spring-boot-mybatis" options="" />
     </option>
   </component>

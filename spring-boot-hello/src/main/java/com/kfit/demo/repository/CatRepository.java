@@ -8,5 +8,5 @@ import org.springframework.data.repository.CrudRepository;
  * @Author lujichao
  * @Date 2019/1/31
  */
-public interface CatRepository extends CrudRepository<Cat,Integer> {
+public interface CatRepository extends CrudRepository<Cat, Integer> {
 }

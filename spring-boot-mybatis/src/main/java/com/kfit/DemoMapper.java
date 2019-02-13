@@ -29,6 +29,7 @@ public interface DemoMapper {
      * 保存数据
      */
     @Insert("insert into demo(name) values(#{name})")
-    @Options(useGeneratedKeys = true, keyColumn = "id") //解决无法获取自增序列id的方案
+    @Options(useGeneratedKeys = true, keyColumn = "id")
+    //解决无法获取自增序列id的方案
     void save(Demo demo);
 }

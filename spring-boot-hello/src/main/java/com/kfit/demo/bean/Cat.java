@@ -7,9 +7,9 @@ import javax.persistence.Id;
 
 /**
  * @Description cat实体类
- *
+ * <p>
  * 使用@Entity进行实体类的持久化操作,当Jpa检测到我们的实体类当中有
- * @Entity 注解的时候,会在数据库中自动生成对应的表结构信息
+ * @Entity 注解的时候, 会在数据库中自动生成对应的表结构信息
  * @Author lujichao
  * @Date 2019/1/31
  */

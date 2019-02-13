@@ -28,9 +28,10 @@ public class TemplatesController {
         map.put("name", "Andy");
         return "hello";
     }
+
     @RequestMapping("/helloFtl")
-    public String helloFtl(Map<String,Object>map){
-        map.put("name","Andy");
+    public String helloFtl(Map<String, Object> map) {
+        map.put("name", "Andy");
         return "helloFtl";
     }
 }
