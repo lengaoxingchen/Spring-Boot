@@ -1,5 +1,6 @@
 package com.kfit.config.shiro;
 
+import at.pollux.thymeleaf.shiro.dialect.ShiroDialect;
 import org.apache.shiro.authc.credential.HashedCredentialsMatcher;
 import org.apache.shiro.cache.ehcache.EhCacheManager;
 import org.apache.shiro.mgt.SecurityManager;
@@ -64,6 +65,16 @@ public class ShiroConfiguration {
         //<!-- 过滤链定义，从上向下顺序执行，一般将 /**放在最为下边 -->:这是一个坑呢，一不小心代码就不好使了;
         //<!-- authc:所有url都必须认证通过才可以访问; anon:所有url都都可以匿名访问-->
         filterChainDefinitionMap.put("/**", "authc");
+
+        //解决登陆页面点登陆会下载favicon.icon ,页面也没跳转到index.html
+        //原因:基本大多数浏览器都会请求 favicon.ico 这个图标文件用来展示在浏览器的URL地址前面，而这个文件被shiro保护了
+        //上面使用/**进行拦截了，authc说明所有url都必须认证通过才可以访问
+        //解决方案一:只需要加入一个过滤
+        filterChainDefinitionMap.put("/favicon.ico","anon");
+
+        //解决方案二:放开static路径
+
+        //filterChainDefinitionMap.put("/static/*","anon");
 
         // 如果不设置默认会自动寻找Web工程根目录下的"/login.jsp"页面
         shiroFilterFactoryBean.setLoginUrl("/login");
@@ -175,6 +186,11 @@ public class ShiroConfiguration {
         CookieRememberMeManager cookieRememberMeManager = new CookieRememberMeManager();
         cookieRememberMeManager.setCookie(rememberMeCookie());
         return cookieRememberMeManager;
+    }
+
+    @Bean
+    public ShiroDialect shiroDialect(){
+        return new ShiroDialect();
     }
 
 }

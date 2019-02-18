@@ -1,8 +1,11 @@
 package com.kfit.root.controller;
 
+import com.kfit.core.bean.UserInfo;
 import groovy.util.logging.Slf4j;
+import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.IncorrectCredentialsException;
 import org.apache.shiro.authc.UnknownAccountException;
+import org.apache.shiro.subject.Subject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
@@ -23,7 +26,13 @@ public class HomeController {
     private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
 
     @RequestMapping({"/", "/index"})
-    public String index() {
+    public String index(Map<String,Object> map) {
+        logger.info("HomeController.index()");
+        //获取用户信息;
+        Subject subject = SecurityUtils.getSubject();
+
+        UserInfo userInfo = (UserInfo) subject.getPrincipal();
+        map.put("userInfo",userInfo);
         return "/index";
     }
 
