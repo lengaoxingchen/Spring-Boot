@@ -42,7 +42,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/kfit/core/controller/UserInfoController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="190">
@@ -51,6 +51,27 @@
                 <element signature="imports" expanded="true" />
                 <element signature="e#806#807#0" expanded="true" />
                 <element signature="e#842#843#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/kfit/core/service/UserInfoService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="286">
+              <caret line="13" column="7" lean-forward="true" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/kfit/core/service/impl/UserInfoServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="308">
+              <caret line="29" column="20" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -79,7 +100,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/spring-boot-fileupload/src/main/resource/templates/file.html" />
         <option value="$PROJECT_DIR$/spring-boot-fileupload/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-fileupload/src/main/resource/application.yml" />
         <option value="$PROJECT_DIR$/spring-boot-fileupload/src/main/resource/templates/mutifile.html" />
@@ -125,11 +145,12 @@
         <option value="$PROJECT_DIR$/spring-boot-websocket/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/kfit/core/controller/UserInfoController.java" />
         <option value="$PROJECT_DIR$/spring-boot-shiro/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/kfit/config/shiro/MyShiroRealm.java" />
         <option value="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/kfit/config/shiro/ShiroConfiguration.java" />
         <option value="$PROJECT_DIR$/spring-boot-shiro/src/main/resources/config/ehcache-shiro.xml" />
-        <option value="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/kfit/root/controller/HomeController.java" />
         <option value="$PROJECT_DIR$/spring-boot-shiro/src/main/resources/templates/login.html" />
+        <option value="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/kfit/config/shiro/MyShiroRealm.java" />
+        <option value="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/kfit/root/controller/HomeController.java" />
+        <option value="$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/kfit/core/service/impl/UserInfoServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -192,7 +213,90 @@
             <path>
               <item name="spring-boot" type="b2602c69:ProjectViewProjectNode" />
               <item name="spring-boot" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-boot-hello" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-boot-shiro" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-boot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-boot" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-boot-shiro" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-boot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-boot" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-boot-shiro" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-boot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-boot" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-boot-shiro" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-boot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-boot" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-boot-shiro" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="kfit" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-boot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-boot" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-boot-shiro" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="kfit" type="462c0819:PsiDirectoryNode" />
+              <item name="shiro" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-boot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-boot" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-boot-shiro" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="kfit" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-boot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-boot" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-boot-shiro" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="kfit" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-boot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-boot" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-boot-shiro" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="kfit" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-boot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-boot" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-boot-shiro" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="kfit" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -211,7 +315,7 @@
     <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550475380435" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550476085839" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/spring-boot-websocket/pom.xml" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -380,7 +484,7 @@
       <workItem from="1550054579237" duration="600000" />
       <workItem from="1550055231155" duration="10388000" />
       <workItem from="1550197800691" duration="18003000" />
-      <workItem from="1550219705071" duration="26425000" />
+      <workItem from="1550219705071" duration="27129000" />
     </task>
     <task id="LOCAL-00001" summary="sA">
       <created>1549959878576</created>
@@ -414,7 +518,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95996000" />
+    <option name="totallyTimeSpent" value="96700000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -427,6 +531,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1366" y="1" width="1366" height="728" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2588055" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -439,13 +544,13 @@
       <window_info id="Web" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32885906" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.34228188" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.34228188" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49924356" weight="0.41275167" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32718122" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4992343" weight="0.45134228" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4992343" visible="true" weight="0.062080536" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5007657" side_tool="true" weight="0.35966387" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32872504" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32718122" />
@@ -564,30 +669,6 @@
     <MESSAGE value="sA" />
     <MESSAGE value="从零开始学SpringBoot" />
     <option name="LAST_COMMIT_MESSAGE" value="从零开始学SpringBoot" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/kfit/root/controller/HomeController.java</url>
-          <line>46</line>
-          <properties />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/kfit/root/controller/HomeController.java</url>
-          <line>50</line>
-          <properties />
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/kfit/root/controller/HomeController.java</url>
-          <line>67</line>
-          <properties />
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -922,23 +1003,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/kfit/core/service/UserInfoService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="13" column="7" lean-forward="true" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/kfit/core/service/impl/UserInfoServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="16" column="20" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/java/补充.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
@@ -1001,27 +1065,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/kfit/config/shiro/MyShiroRealm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1958">
-          <caret line="89" column="17" lean-forward="true" selection-start-line="89" selection-start-column="17" selection-end-line="89" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/kfit/config/shiro/ShiroConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="173" column="19" selection-start-line="173" selection-start-column="19" selection-end-line="173" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1726#1741#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/kfit/App.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
@@ -1051,16 +1094,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
           <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/kfit/root/controller/HomeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="71" column="1" lean-forward="true" selection-start-line="71" selection-start-column="1" selection-end-line="71" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1099,6 +1132,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/kfit/config/shiro/MyShiroRealm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-275">
+          <caret line="111" column="20" selection-start-line="111" selection-start-column="20" selection-end-line="111" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/kfit/root/controller/HomeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="915">
+          <caret line="63" column="25" lean-forward="true" selection-start-line="63" selection-start-column="25" selection-end-line="63" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/kfit/config/shiro/ShiroConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="105" column="5" lean-forward="true" selection-start-line="105" selection-start-column="5" selection-end-line="105" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/kfit/core/controller/UserInfoController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
@@ -1107,6 +1170,23 @@
             <element signature="imports" expanded="true" />
             <element signature="e#806#807#0" expanded="true" />
             <element signature="e#842#843#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/kfit/core/service/UserInfoService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" column="7" lean-forward="true" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-shiro/src/main/java/com/kfit/core/service/impl/UserInfoServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="29" column="20" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -50,21 +50,18 @@ public class HomeController {
         String msg = "";
         if (exception != null) {
             if (UnknownAccountException.class.getName().equals(exception)) {
-                logger.info("UnknownAccountException -- > 账号不存在：");
                 msg = "UnknownAccountException -- > 账号不存在：";
             } else if (IncorrectCredentialsException.class.getName().equals(exception)) {
-                logger.info("IncorrectCredentialsException -- > 密码不正确：");
                 msg = "IncorrectCredentialsException -- > 密码不正确：";
             } else if ("kaptchaValidateFailed".equals(exception)) {
-                logger.info("kaptchaValidateFailed -- > 验证码错误");
                 msg = "kaptchaValidateFailed -- > 验证码错误";
             } else {
                 msg = "else >> "+exception;
-                logger.info("else -- >" + exception);
             }
         }else{
-            logger.info("异常为空");
+            msg="异常信息为空";
         }
+        logger.info(msg);
         map.put("msg", msg);
         // 此方法不处理登录成功,由shiro进行处理.
         return "/login";
