@@ -1,0 +1,18 @@
+ShiroFilterFactory中已经由Shiro官方实现的过滤器：
+
+Filter Name   Class
+anon          org.apache.shiro.web.filter.authc.AnonymousFilter
+authc         org.apache.shiro.web.filter.authc.FormAuthenticationFilter
+authcBasic    org.apache.shiro.web.filter.authc.BasicHttpAuthenticationFilter
+perms         org.apache.shiro.web.filter.authz.PermissionsAuthorizationFilter
+port          org.apache.shiro.web.filter.authz.PortFilter
+rest          org.apache.shiro.web.filter.authz.HttpMethodPermissionFilter
+roles         org.apache.shiro.web.filter.authz.RolesAuthorizationFilter
+ssl           org.apache.shiro.web.filter.authz.SslFilter
+user          org.apache.shiro.web.filter.authc.UserFilter
+
+anon:所有url都都可以匿名访问;
+authc: 需要认证才能进行访问;
+user:配置记住我或认证通过可以访问；
+这几个是我们会用到的，在这里说明下，其它的请自行查询文档进行学习。
+这时候我们运行程序，访问/index页面我们会发现自动跳转到了login页面，当然这个时候输入账号和密码是无法进行访问的。下面这才是重点：任何身份认证，如何权限控制。
