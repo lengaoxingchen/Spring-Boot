@@ -18,6 +18,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+import javax.servlet.Filter;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
@@ -58,6 +59,13 @@ public class ShiroConfiguration {
         //拦截器.
         Map<String, String> filterChainDefinitionMap = new LinkedHashMap<String, String>();
 
+        // 配置不会被拦截的链接 顺序判断
+        filterChainDefinitionMap.put("/css/**", "anon");
+        filterChainDefinitionMap.put("/js/**", "anon");
+        filterChainDefinitionMap.put("/img/**", "anon");
+        filterChainDefinitionMap.put("/layui/**", "anon");
+        filterChainDefinitionMap.put("/captcha/**", "anon");
+
         //配置退出 过滤器,其中的具体的退出代码Shiro已经替我们实现了
         filterChainDefinitionMap.put("/logout", "logout");
 
@@ -70,6 +78,9 @@ public class ShiroConfiguration {
         //<!-- 过滤链定义，从上向下顺序执行，一般将 /**放在最为下边 -->:这是一个坑呢，一不小心代码就不好使了;
         //<!-- authc:所有url都必须认证通过才可以访问; anon:所有url都都可以匿名访问-->
         //shiro过滤链中加入并发登录人数过滤器
+        filterChainDefinitionMap.put("/add", "perms[add]");
+        filterChainDefinitionMap.put("/login", "captchaVaildate,authc");
+
         filterChainDefinitionMap.put("/**", "authc,user");
 
         //解决登陆页面点登陆会下载favicon.icon ,页面也没跳转到index.html
@@ -89,6 +100,11 @@ public class ShiroConfiguration {
         shiroFilterFactoryBean.setSuccessUrl("/index");
         //未授权界面;
         shiroFilterFactoryBean.setUnauthorizedUrl("/403");
+
+        //自定义拦截器
+        Map<String, Filter> filters = shiroFilterFactoryBean.getFilters();
+        filters.put("captchaVaildate", new CaptchaValidateFilter());
+        filters.put("authc", new MyFormAuthenticationFilter());
 
         shiroFilterFactoryBean.setFilterChainDefinitionMap(filterChainDefinitionMap);
         return shiroFilterFactoryBean;
@@ -190,6 +206,7 @@ public class ShiroConfiguration {
         SimpleCookie simpleCookie = new SimpleCookie("rememberMe");
         //<!-- 记住我cookie生效时间30天 ,单位秒;-->
         simpleCookie.setMaxAge(259200);
+        simpleCookie.setHttpOnly(true);
         return simpleCookie;
     }
 
