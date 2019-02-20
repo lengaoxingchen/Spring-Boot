@@ -11,6 +11,7 @@
         <module name="spring-boot-hello1" />
         <module name="spring-boot-jsp" />
         <module name="spring-boot-mybatis" />
+        <module name="spring-boot-redis" />
         <module name="spring-boot-shiro" />
         <module name="spring-boot-websocket" />
       </profile>
@@ -23,6 +24,7 @@
       <module name="spring-boot-hello" target="1.8" />
       <module name="spring-boot-jsp" target="1.8" />
       <module name="spring-boot-mybatis" target="1.8" />
+      <module name="spring-boot-redis" target="1.8" />
       <module name="spring-boot-shiro" target="1.8" />
       <module name="spring-boot-websocket" target="1.8" />
     </bytecodeTargetLevel>
@@ -32,6 +34,7 @@
       <module name="demo" options="-parameters" />
       <module name="spring-boot-druid" options="-parameters" />
       <module name="spring-boot-mybatis" options="" />
+      <module name="spring-boot-redis" options="" />
     </option>
   </component>
 </project>
